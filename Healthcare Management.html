@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>LifeCare Hub</title>
+
+<link rel="stylesheet"
+href="Healthcare Management.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+LifeCare Hub
+
+</div>
+<div>
+<ul class="nav-links">
+
+<li><a href="Healthcare Management.html" class="active">Home</a></li>
+
+<li><a href="doctors.html">Doctors</a></li>
+
+<li><a href="department.html">Departments</a></li>
+
+<li><a href="appointment.html">Appointment</a></li>
+
+<li><a href="health tools.html">Health Tools</a></li>
+
+<li><a href="emergency.html">Emergency</a></li>
+
+<li><a href="contact us.html">Contact</a></li>
+
+<li><a href="#" onclick="openLoginModal()">Login</a></li>
+
+</ul>
+
+    <bottom><button class="dark-btn" onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+    </bottom>
+</div>
+
+</nav>
+
+</header>
+
+<section>
+
+    <div>
+
+        <h1>Your Health, Our Priority</h1>
+
+        <p>
+            Welcome to <strong>LifeCare Hub</strong>, your trusted Smart Healthcare
+            Management System. Book appointments, explore healthcare services,
+            connect with qualified doctors, and access useful health tools-all in one place.
+        </p>
+
+        <div style="margin: 20px;">
+
+            <a href="appointment.html"  style="margin: 10px;">
+                Book Appointment
+            </a>
+
+ <button class="profile-btn"
+onclick="openAbout(
+'About LifeCare Hub',
+'Making Healthcare Simple, Accessible & Efficient',
+'Our Mission',
+'Our mission is to improve healthcare accessibility by using technology to connect patients with qualified healthcare professionals. We aim to provide reliable medical information, convenient online services, and tools that encourage healthier lifestyles.',
+'Our Vision',
+'Our vision is to become a trusted digital healthcare platform that empowers individuals to take better care of their health while supporting medical professionals in delivering quality healthcare services.',
+'What We Offer',
+' Experienced and qualified specialist doctors<br> Multiple medical departments for specialized treatment<br> Easy online appointment booking<br> Health tools such as BMI, Water Intake, and Calorie Calculators<br> Medicine reminder to help users manage medications<br> Emergency healthcare information and assistance',
+'Why Choose LifeCare Hub?',
+'✔ User-friendly and responsive website design<br>✔ Quick access to healthcare services<br>✔ Secure and convenient appointment booking<br>✔ Helpful health calculators and wellness tools<br>✔ Reliable healthcare information in one place',
+'Our Commitment',
+'At LifeCare Hub, we are committed to providing a seamless digital healthcare experience. By combining modern web technology with healthcare services, we strive to make medical support more accessible, efficient, and convenient for everyone.',
+)">
+Learn More
+</button>           
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/YMOHWV2CR62FDLBRTAROJVERKQ.jpg&w=1440" alt="Doctor">
+        <img src="https://www.shutterstock.com/image-photo/family-couple-one-child-standing-260nw-2715099991.jpg" alt="Hospital">
+
+    </div>
+<div>
+</section>
+
+<section class="emergency">
+
+    <div class="emergency-content">
+
+        <div class="emergency-text">
+
+            <h2>Need Immediate Medical Assistance?</h2>
+
+            <p>
+                Our emergency support team is available 24 hours a day,
+                7 days a week. If you need urgent medical care, don't
+                hesitate to contact us immediately.
+            </p>
+
+            <a href="emergency.html">
+                <button class="emergency-btn">
+                    🚑 Get Emergency Help
+                </button>
+            </a>
+
+        </div>
+
+        <div class="emergency-image">
+
+            <img src="https://sc04.alicdn.com/kf/Hd433dc57f5e448569ff62dcb3e2c0a1aK.jpg" alt="Emergency">
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h3>LifeCare Hub</h3>
+
+<p>
+
+Providing smart healthcare services to make quality
+medical care simple, accessible, and reliable.
+
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Doctors</a></li>
+
+<li><a href="#">Departments</a></li>
+
+<li><a href="#">Appointment</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Contact Us</h3>
+
+<p>📍 Chattogram, Bangladesh</p>
+
+<p>📞 +880 1813-609891</p>
+
+<p>✉ support@lifecarehub.com</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 LifeCare Hub. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<div id="aboutModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeAbout()">&times;</span>
+
+<h2 id="aboutTitle"></h2>
+
+<h3 id="aboutTagline"></h3>
+
+<p><strong id="heading1"></strong></p>
+<p id="content1"></p>
+
+<p><strong id="heading2"></strong></p>
+<p id="content2"></p>
+
+<p><strong id="heading3"></strong></p>
+<p id="content3"></p>
+
+<p><strong id="heading4"></strong></p>
+<p id="content4"></p>
+
+<p><strong id="heading5"></strong></p>
+<p id="content5"></p>
+
+</div>
+
+</div>
+
+
+<div id="loginModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeLoginModal()">&times;</span>
+
+<h2>Patient Portal</h2>
+
+<p class="login-text">
+Sign in to access appointments, health tools, and your personal healthcare dashboard.
+</p>
+
+<form id="loginForm">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="loginEmail"
+placeholder="Enter your email"
+required>
+
+<label>Password</label>
+
+<input
+type="password"
+id="loginPassword"
+placeholder="Enter your password"
+required>
+
+<div class="remember">
+
+<input
+type="checkbox"
+id="remember">
+
+<label for="remember">
+Remember Me
+</label>
+
+</div>
+
+<button type="submit" class="login-btn">
+
+Login
+
+</button>
+
+</form>
+
+<p class="register-text">
+
+Don't have an account?
+
+<a href="#" onclick="showRegister()">
+
+Register Here
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+<script src="Healthcare_script.js"></script>
+</body>
+
+</html>

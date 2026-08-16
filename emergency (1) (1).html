@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency</title>
+    <link rel="stylesheet" href="Healthcare Management.css">
+</head>
+<body>
+    <header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+LifeCare Hub
+
+</div>
+<div>
+<ul class="nav-links">
+
+<li><a href="Healthcare Management.html">Home</a></li>
+
+<li><a href="doctors.html">Doctors</a></li>
+
+<li><a href="department.html">Departments</a></li>
+
+<li><a href="appointment.html">Appointment</a></li>
+
+<li><a href="health tools.html">Health Tools</a></li>
+
+<li><a href="emergency.html" class="active">Emergency</a></li>
+
+<li><a href="contact us.html">Contact</a></li>
+
+<li><a href="#" onclick="openLoginModal()">Login</a></li>
+
+</ul>
+</div>
+
+</nav>
+
+</header>
+
+<section class="page-hero">
+
+    <h1>Emergency Services</h1>
+
+    <p>
+        Our emergency team is available 24 hours a day,
+        7 days a week to provide immediate medical care.
+    </p>
+
+</section>
+
+<section class="emergency-page">
+
+<h2>Emergency Assistance</h2>
+
+<div class="emergency-grid">
+
+<div class="emergency-card">
+
+<h3>🚑 Ambulance Service</h3>
+
+<p>
+
+Our ambulance service is available 24/7 for
+rapid emergency transportation.
+
+</p>
+
+</div>
+
+<div class="emergency-card">
+
+<h3>❤️ Emergency Care</h3>
+
+<p>
+
+Experienced doctors and nurses are always
+ready to handle critical situations.
+
+</p>
+
+</div>
+
+<div class="emergency-card">
+
+<h3>🩹 First Aid Tips</h3>
+
+<p>
+
+Learn essential first aid steps before
+professional medical assistance arrives.
+
+</p>
+
+</div>
+
+<div class="emergency-card">
+
+<h3>📍 Emergency Contact</h3>
+
+<p>
+
+Phone: +880 1700-123456
+
+</p>
+
+<p>
+
+Email: emergency@lifecarehub.com
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="emergency-guide">
+
+<h2>Emergency First Aid Guide</h2>
+
+<p class="section-text">
+Quick first aid instructions for common emergencies. These tips are for immediate assistance while waiting for professional medical help.
+</p>
+
+<div class="emergency-container">
+
+<div class="emergency-card">
+
+<h3>❤️ Heart Attack</h3>
+
+<p>Recognize the warning signs and learn what to do immediately.</p>
+
+<button class="profile-btn"
+onclick="openEmergency(
+'Heart Attack',
+'❤️ Heart Attack',
+'• Call emergency services immediately.<br><br>• Keep the person calm and seated.<br><br>• Loosen tight clothing.<br><br>• If prescribed, help them take their heart medication.<br><br>• If they become unconscious and stop breathing, begin CPR if you are trained.<br><br><strong>Do not delay seeking professional medical help.</strong>'
+)">
+Read Guide
+</button>
+
+</div>
+
+<div class="emergency-card">
+
+<h3>🔥 Burns</h3>
+
+<p>Learn how to treat minor burns safely.</p>
+
+<button class="profile-btn"
+onclick="openEmergency(
+'Burns',
+'🔥 Burns',
+'• Cool the burn under cool running water for 20 minutes.<br><br>• Remove rings or tight items before swelling starts.<br><br>• Cover the burn with a clean, non-stick dressing.<br><br>• Do not apply ice, butter, toothpaste, or oil.<br><br><strong>Seek medical attention for severe burns.</strong>'
+)">
+Read Guide
+</button>
+
+</div>
+
+<div class="emergency-card">
+
+<h3>🩸 Severe Bleeding</h3>
+
+<p>Control bleeding until help arrives.</p>
+
+<button class="profile-btn"
+onclick="openEmergency(
+'Severe Bleeding',
+'🩸 Severe Bleeding',
+'• Apply firm pressure with a clean cloth.<br><br>• Keep pressure on the wound.<br><br>• Raise the injured area if possible.<br><br>• Do not remove objects stuck in the wound.<br><br><strong>Call emergency services immediately.</strong>'
+)">
+Read Guide
+</button>
+
+</div>
+
+<div class="emergency-card">
+
+<h3>🦴 Fracture</h3>
+
+<p>Help someone with a suspected broken bone.</p>
+
+<button class="profile-btn"
+onclick="openEmergency(
+'Fracture',
+'🦴 Fracture',
+'• Keep the injured area still.<br><br>• Support the injured limb without moving it.<br><br>• Apply a cold pack wrapped in cloth.<br><br>• Do not try to straighten the bone.<br></br><strong>Seek medical attention immediately.</strong>'
+)">
+Read Guide
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="emergencyModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeEmergency()">&times;</span>
+
+<h2 id="emergencyTitle"></h2>
+
+<h3 id="emergencySubtitle"></h3>
+
+<p id="emergencyContent"></p>
+
+</div>
+
+</div>
+
+<p style="margin-top:20px;color:red;font-weight:bold;">
+⚠️ This guide provides basic first aid information only. In a medical emergency, contact your local emergency services or visit the nearest hospital immediately.
+</p>
+
+<script src="Healthcare_script.js"></script>
+</body>
+</html>

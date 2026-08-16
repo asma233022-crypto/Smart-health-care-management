@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>BMI Calculator</title>
+
+<link rel="stylesheet" href="Healthcare Management.css">
+
+</head>
+
+<body>
+
+<section class="bmi-section">
+
+<h2 style="text-align:center; font-size:40px; color:#003366; margin-bottom:40px;">BMI Calculator</h2>
+
+<p class="section-text">
+Calculate your Body Mass Index (BMI) to understand whether your weight is within a healthy range.
+</p>
+
+<div class="bmi-card">
+
+<label>Height (cm)</label>
+
+<input
+type="number"
+id="height"
+placeholder="Enter your height">
+
+<label>Weight (kg)</label>
+
+<input
+type="number"
+id="weight"
+placeholder="Enter your weight">
+
+<button onclick="calculateBMI()">
+
+Calculate BMI
+
+</button>
+
+<div id="bmiResult" class="result">
+
+</div>
+
+</div>
+
+</section>
+
+<script src="Healthcare_script.js"></script>
+
+</body>
+
+</html>
